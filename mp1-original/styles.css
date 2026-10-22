@@ -1,0 +1,517 @@
+/* =========================
+   GENERAL
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    background-color: #111111;
+    color: #f5f1e8;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 30px auto 0;
+    padding: 35px;
+
+    background-color: #1b1b1b;
+
+    border-bottom: 1px solid #444;
+}
+
+header h1 {
+    margin: 0;
+
+    font-size: calc(28px + 1vw);
+}
+
+header p {
+    margin: 8px 0 0;
+
+    font-family: "DM Mono", monospace;
+    color: #b5b5b5;
+}
+
+
+/* =========================
+   PAGE LAYOUT
+   ========================= */
+
+.page-layout {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: stretch;
+
+    min-height: 100vh;
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+    width: 30%;
+
+    padding: 40px 25px;
+
+    background-color: #171717;
+
+    border-right: 1px solid #333;
+}
+
+nav ul {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+nav a {
+    display: block;
+
+    padding: 15px 18px;
+
+    text-decoration: none;
+
+    font-family: "DM Mono", monospace;
+    font-size: calc(12px + 0.3vw);
+
+    border: 1px solid #333;
+
+    transition: 0.2s;
+}
+
+nav a:hover {
+    background-color: #f5d37e;
+    color: #111111;
+
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+
+main {
+    width: 70%;
+    min-height: 100vh;
+
+    padding: 60px;
+
+    background-color: #202020;
+}
+
+.eyebrow {
+    font-family: "DM Mono", monospace;
+
+    color: #e7a56b;
+
+    font-size: calc(11px + 0.2vw);
+
+    letter-spacing: 2px;
+}
+
+main h2 {
+    margin: 20px 0;
+
+    font-size: calc(35px + 2vw);
+    line-height: 1;
+}
+
+main h2 span {
+    color: #f5d37e;
+}
+
+main p {
+    max-width: 700px;
+
+    line-height: 1.8;
+
+    font-size: calc(14px + 0.15vw);
+
+    color: #d0d0d0;
+}
+
+.intro {
+    font-size: calc(17px + 0.2vw);
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   BUTTON
+   ========================= */
+
+.button {
+    display: inline-block;
+
+    margin-top: 25px;
+    padding: 15px 24px;
+
+    background-color: #f5d37e;
+    color: #111111;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #e7a56b;
+}
+
+
+/* =========================
+   GENERAL CONTENT CARDS
+   ========================= */
+
+.card {
+    margin: 25px 0;
+    padding: 25px;
+
+    background-color: #292929;
+
+    border: 1px solid #3a3a3a;
+    border-radius: 6px;
+}
+
+.card h3 {
+    margin-top: 0;
+
+    color: #f5d37e;
+}
+
+.card p {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   EXPERIENCE LIST
+   ========================= */
+
+.detail-list {
+    margin-top: 25px;
+    padding-left: 25px;
+}
+
+.detail-list li {
+    margin-bottom: 18px;
+
+    line-height: 1.7;
+
+    color: #d0d0d0;
+}
+
+
+/* =========================
+   CALCULATOR
+   ========================= */
+
+.calculator {
+    margin-top: 60px;
+    padding: 30px;
+
+    background-color: #171717;
+
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+}
+
+.calculator h2 {
+    margin-bottom: 10px;
+
+    font-size: calc(28px + 1vw);
+}
+
+
+/* =========================
+   CALCULATOR INPUTS
+   ========================= */
+
+.calculator-inputs {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.calculator-inputs input {
+    width: 50%;
+
+    padding: 15px;
+
+    background-color: #292929;
+    color: #ffffff;
+
+    border: 1px solid #555;
+    border-radius: 4px;
+
+    font-family: "DM Mono", monospace;
+    font-size: calc(12px + 0.2vw);
+}
+
+
+/* =========================
+   CALCULATOR BUTTONS
+   ========================= */
+
+.calculator-buttons {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.calculator-buttons button {
+    flex: 1;
+
+    min-width: 60px;
+
+    padding: 15px;
+
+    background-color: #f5d37e;
+    color: #111111;
+
+    border: none;
+    border-radius: 4px;
+
+    font-family: "DM Mono", monospace;
+    font-size: calc(14px + 0.2vw);
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.calculator-buttons button:hover {
+    background-color: #e7a56b;
+}
+
+
+/* =========================
+   CALCULATOR RESULT
+   ========================= */
+
+.calculator-result {
+    margin-top: 25px;
+    padding: 20px;
+
+    background-color: #292929;
+
+    border-radius: 4px;
+}
+
+.calculator-result p {
+    margin: 0;
+
+    font-family: "DM Mono", monospace;
+    font-size: calc(11px + 0.2vw);
+
+    color: #999999;
+}
+
+.calculator-result h3 {
+    min-height: 35px;
+
+    margin: 10px 0 0;
+
+    font-size: calc(24px + 1vw);
+
+    color: #f5d37e;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 0 auto 30px;
+    padding: 25px;
+
+    background-color: #1b1b1b;
+
+    text-align: center;
+
+    border-top: 1px solid #444;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #f5d37e;
+}
+
+
+/* =========================
+   SCREENS BELOW 1000PX
+   ========================= */
+
+@media screen and (max-width: 1000px) {
+
+    .page-layout {
+        flex-wrap: wrap;
+    }
+
+    main {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================
+   TABLET / MOBILE
+   BELOW 750PX
+   ========================= */
+
+@media screen and (max-width: 750px) {
+
+    header {
+        text-align: center;
+
+        margin-top: 15px;
+        padding: 25px 15px;
+    }
+
+    .page-layout {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+
+        padding: 12px;
+
+        border-right: none;
+        border-bottom: 1px solid #333;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+
+        font-size: calc(10px + 0.3vw);
+    }
+
+    main {
+        width: 100%;
+
+        padding: 35px 20px;
+    }
+
+
+    /* Calculator mobile layout */
+
+    .calculator {
+        padding: 20px;
+    }
+
+    .calculator-inputs {
+        flex-direction: column;
+    }
+
+    .calculator-inputs input {
+        width: 100%;
+    }
+
+    .calculator-buttons button {
+        flex: 1 1 30%;
+    }
+
+}
+
+
+/* =========================
+   SMALL PHONES
+   BELOW 450PX
+   ========================= */
+
+@media screen and (max-width: 450px) {
+
+    header,
+    .page-layout,
+    footer {
+        width: 96%;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    nav {
+        padding: 8px;
+    }
+
+    nav a {
+        padding: 7px;
+    }
+
+    .calculator {
+        padding: 15px;
+    }
+
+    .calculator-buttons {
+        gap: 7px;
+    }
+
+    .calculator-buttons button {
+        padding: 12px 8px;
+    }
+
+}

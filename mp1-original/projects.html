@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>sourceak | Projects</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>sourceak</h1>
+        <p>Projects</p>
+    </header>
+
+    <div class="page-layout">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="coursework.html">Coursework</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <p class="eyebrow">06 / PROJECTS</p>
+
+            <h2>
+                Ideas into
+                <span>working things.</span>
+            </h2>
+
+            <p class="intro">
+                A selection of projects I've built while exploring
+                machine learning, data, and software engineering.
+            </p>
+
+
+            <!-- PROJECT 1 -->
+
+            <div class="card">
+
+                <h3>Recyclify</h3>
+
+                <p>
+                    AI-powered application that identifies recyclable
+                    items, simplifying waste sorting and promoting
+                    eco-friendly practices.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong>
+                    Python · TensorFlow · Matplotlib · NumPy ·
+                    Streamlit · GitHub
+                </p>
+
+            </div>
+
+
+            <!-- PROJECT 2 -->
+
+            <div class="card">
+
+                <h3>Book Recommendation System</h3>
+
+                <p>
+                    Content-based recommendation system that recommends
+                    books based on preferred authors and titles, with a
+                    percentage-based measure of alignment to a reader's
+                    preferences.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong>
+                    Python · Pandas · NumPy · Jupyter Notebook · Git
+                </p>
+
+            </div>
+
+
+            <!-- PROJECT 3 -->
+
+            <div class="card">
+
+                <h3>Loan Qualification System</h3>
+
+                <p>
+                    Qualification tool that evaluates credit score,
+                    monthly debt, monthly income, and desired loan
+                    amount, with account data retrieved through Plaid APIs.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong>
+                    Flask · SQLite · HTML · CSS · Git
+                </p>
+
+            </div>
+
+
+            <!-- JAVASCRIPT CALCULATOR -->
+
+            <section class="calculator">
+
+                <p class="eyebrow">JAVASCRIPT PROJECT</p>
+
+                <h2>
+                    Calculator
+                </h2>
+
+                <p>
+                    Enter two numbers and select an operation.
+                </p>
+
+                <div class="calculator-inputs">
+
+                    <input
+                        type="number"
+                        id="first-number"
+                        placeholder="First number">
+
+                    <input
+                        type="number"
+                        id="second-number"
+                        placeholder="Second number">
+
+                </div>
+
+
+                <div class="calculator-buttons">
+
+                    <button onclick="addition()">+</button>
+
+                    <button onclick="subtraction()">-</button>
+
+                    <button onclick="multiplication()">*</button>
+
+                    <button onclick="division()">/</button>
+
+                    <button onclick="power()">**</button>
+
+                    <button onclick="clearCalculator()">Clear</button>
+
+                </div>
+
+
+                <div class="calculator-result">
+
+                    <p>Result</p>
+
+                    <h3 id="output"></h3>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <footer>
+
+        <p>
+            &copy; 2026 sourceak |
+            <a href="credits.html">Credits</a>
+        </p>
+
+    </footer>
+
+
+    <script src="calculator.js"></script>
+
+</body>
+
+</html>
